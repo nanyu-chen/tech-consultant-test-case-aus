@@ -6,13 +6,21 @@
 Install the required packages by running the following command:
 
 ```bash
-pip install -r ./part-1/requirements.txt
+pip install -r ./requirements.txt
 ```
 
-## Run Flask App
+## Part 1 - Run Flask App
 
 Get the Flask server app running using the following command:
 
 ```python
 python part-1/app.py                                                         
+```
+
+## Part 2 - Resample Sales Data
+
+Process the raw sales data using the following command:
+
+```python
+python part-2/process_sales.py
 ```

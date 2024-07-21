@@ -4,6 +4,12 @@
 #
 #    pip-compile requirements.in
 #
+aiohttp==3.9.5
+    # via -r requirements.in
+aiosignal==1.3.1
+    # via aiohttp
+attrs==23.2.0
+    # via aiohttp
 blinker==1.8.2
     # via flask
 certifi==2024.7.4
@@ -16,8 +22,14 @@ flask==3.0.3
     # via
     #   -r requirements.in
     #   pytest-flask
+frozenlist==1.4.1
+    # via
+    #   aiohttp
+    #   aiosignal
 idna==3.7
-    # via requests
+    # via
+    #   requests
+    #   yarl
 iniconfig==2.0.0
     # via pytest
 itsdangerous==2.2.0
@@ -28,6 +40,10 @@ markupsafe==2.1.5
     # via
     #   jinja2
     #   werkzeug
+multidict==6.0.5
+    # via
+    #   aiohttp
+    #   yarl
 numpy==1.26.4
     # via
     #   -r requirements.in
@@ -62,3 +78,5 @@ werkzeug==3.0.3
     #   -r requirements.in
     #   flask
     #   pytest-flask
+yarl==1.9.4
+    # via aiohttp

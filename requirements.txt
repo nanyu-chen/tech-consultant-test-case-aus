@@ -80,3 +80,4 @@ werkzeug==3.0.3
     #   pytest-flask
 yarl==1.9.4
     # via aiohttp
+Flask[async]
